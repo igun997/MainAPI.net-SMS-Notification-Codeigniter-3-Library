@@ -72,8 +72,8 @@ class Sendsms {
     function setContent($content,$filter="true") {
         if (!$filter) {
             $content = strip_tags($content, "<p>");
-            $content = str_replace('<p>', '', $isi);
-            $content = str_replace('</p>', '', $isi);
+            $content = str_replace('<p>', '', $content);
+            $content = str_replace('</p>', '', $content);
         } 
         $this->content = $content;
     }
